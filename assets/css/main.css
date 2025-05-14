@@ -82,6 +82,8 @@ body, html {
 .title_left {
     padding-top: 8vw;
     filter: none;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .title_right {
