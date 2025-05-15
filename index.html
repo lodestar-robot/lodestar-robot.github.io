@@ -59,20 +59,20 @@
 
 <hr class="rounded">
 
-<div class="container">
-    <div class="content-section">
-        <h2 class="section-title">Overview of LODESTAR</h2>
-        <img src="assets/media/images/pipeline.pdf" alt="LODESTAR Pipeline" class="method-image">
-        <div class="method-text">
-            <p>
-                LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
-                demonstrations are segmented into manipulation and transition phases using discriminators built
-                from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
-                Skill Routing Transformer policy composes and selects skills or transition actions during execution,
-                enabling coherent long-horizon manipulation in real-world settings.
-            </p>
-        </div>
+<div class="rows">
+    <h2>Overview of LODESTAR</h2>
+    <div class="pdf-container">
+        <object data="assets/media/images/pipeline.pdf" type="application/pdf" class="method-image">
+            <p>Your browser does not support PDFs. <a href="assets/media/images/pipeline.pdf">Download the PDF</a> to view it.</p>
+        </object>
     </div>
+    <p class="method-text">
+        LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
+        demonstrations are segmented into manipulation and transition phases using discriminators built
+        from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
+        Skill Routing Transformer policy composes and selects skills or transition actions during execution,
+        enabling coherent long-horizon manipulation in real-world settings.
+    </p>
 </div>
 
 <hr class="rounded">
