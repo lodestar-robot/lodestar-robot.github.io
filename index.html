@@ -8,9 +8,9 @@
     <title>LodeStar | Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations</title>
     
     <!-- Thumbnail for social media sharing -->
-    <meta property="og:image" content="assets/imgs/logo.png">
+    <meta property="og:image" content="assets/media/images/logo.png">
     <!-- Favicon -->
-    <link rel="icon" href="assets/imgs/logo.png" type="image/png">
+    <link rel="icon" href="assets/media/images/logo.png" type="image/png">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="title-section">
                 <h1 class="main-title">
-                    <img src="assets/imgs/logo.png" alt="LodeStar Icon" class="title-logo">
+                    <img src="assets/media/images/logo.png" alt="LodeStar Icon" class="title-logo">
                     LodeStar: Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations
                 </h1>
                 <div class="author-container">
@@ -33,7 +33,7 @@
             <div id="lodeStarVideoSection" class="video-section">
                 <div class="video-container">
                     <video autoplay muted playsinline loop controls preload="metadata" class="main-video">
-                        <source src="assets/videos/LodeStar-Video.mp4" type="video/mp4">
+                        <source src="assets/media/videos/LodeStar-Video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -49,9 +49,27 @@
             <p>
                 Developing robotic systems capable of robustly executing long-horizon manipulation tasks with human-level dexterity is challenging, as such tasks require both physical dexterity and seamless sequencing of manipulation skills while robustly handling environment variations.
                 While imitation learning offers a promising approach, acquiring comprehensive datasets is resource-intensive.
-                In this work, we propose a learning framework and system LodeStar that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
+                In this work, we propose a learning framework and system LODESTAR that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
                 These sim-augmented datasets enable robust skill training, with a Skill Routing Transformer policy effectively chaining the learned skills together to execute complex long-horizon manipulation tasks.
                 Experimental evaluations on three challenging real-world long-horizon dexterous manipulation tasks demonstrate that our approach significantly improves task performance and robustness compared to previous baselines.
+            </p>
+        </div>
+    </div>
+</div>
+
+<hr class="rounded">
+
+<div class="container">
+    <div class="content-section">
+        <h2 class="section-title">Overview of LODESTAR</h2>
+        <img src="assets/media/images/pipeline.pdf" alt="LODESTAR Pipeline" class="method-image">
+        <div class="method-text">
+            <p>
+                LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
+                demonstrations are segmented into manipulation and transition phases using discriminators built
+                from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
+                Skill Routing Transformer policy composes and selects skills or transition actions during execution,
+                enabling coherent long-horizon manipulation in real-world settings.
             </p>
         </div>
     </div>
