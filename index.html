@@ -4,37 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/lodestar.css">
     <title>LodeStar | Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations</title>
-    </head>
+    
+    <!-- Thumbnail for social media sharing -->
+    <meta property="og:image" content="assets/imgs/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/imgs/logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+</head>
 <body>
 
-<div id="title_slide">
-    <div class="title_left">
-        <h1 style="color: black;">
-            <img src="assets/imgs/logo.png" alt="LodeStar Icon" style="height: 1.1em; vertical-align: middle; margin-right: 8px; margin-bottom: 4px;">
-            LodeStar: Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations
-        </h1>
-        <div class="author-container">
-            <div class="author-name">Anonymous Authors</div>
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <div class="title-section">
+                <h1 class="main-title">
+                    <img src="assets/imgs/logo.png" alt="LodeStar Icon" class="title-logo">
+                    LodeStar: Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations
+                </h1>
+                <div class="author-container">
+                    <div class="author-name">Anonymous Authors</div>
+                </div>
             </div>
-        <br>
-        <div id="lodeStarVideoSection" style="margin-top: 20px;">
-            <div class="allegrofail"> <div class="video_container">
-                    <video autoplay muted playsinline loop controls preload="metadata" style="width:100%;">
+            
+            <div id="lodeStarVideoSection" class="video-section">
+                <div class="video-container">
+                    <video autoplay muted playsinline loop controls preload="metadata" class="main-video">
                         <source src="assets/videos/LodeStar-Video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="content-section">
+        <h2 class="section-title">Abstract</h2>
+        <div class="abstract-text">
+            <p>
+                Developing robotic systems capable of robustly executing long-horizon manipulation tasks with human-level dexterity is challenging, as such tasks require both physical dexterity and seamless sequencing of manipulation skills while robustly handling environment variations.
+                While imitation learning offers a promising approach, acquiring comprehensive datasets is resource-intensive.
+                In this work, we propose a learning framework and system LodeStar that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
+                These sim-augmented datasets enable robust skill training, with a Skill Routing Transformer policy effectively chaining the learned skills together to execute complex long-horizon manipulation tasks.
+                Experimental evaluations on three challenging real-world long-horizon dexterous manipulation tasks demonstrate that our approach significantly improves task performance and robustness compared to previous baselines.
+            </p>
         </div>
+    </div>
 </div>
 
-<hr class="rounded" style="margin-top: 40px;">
+<hr class="rounded">
 
-<div style="text-align: center; padding: 20px 0; font-size: 0.9em; color: #555;">
-    <p>&copy; 2025 Anonymous Authors. All rights reserved.</p>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Anonymous Authors. All rights reserved.</p>
     </div>
+</footer>
 
 </body>
 </html>
