@@ -29,47 +29,75 @@
                     <div class="author-name">Anonymous Authors</div>
                 </div>
             </div>
-            
-            <div id="lodeStarVideoSection" class="video-section">
-                <div class="video-container">
-                    <video autoplay muted playsinline loop controls preload="metadata" class="main-video">
-                        <source src="assets/media/videos/LodeStar-Video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pull Figure Section -->
+<section class="pull-figure-section">
+    <div class="container">
+        <div class="pull-figure-container">
+            <img src="assets/media/images/pull-figure.png" alt="LODESTAR Framework" class="pull-figure-image">
+            <p class="pull-figure-caption">
+                We present LODESTAR, a framework for learning robust long-horizon dexterous
+                manipulation from a few human demonstrations. LODESTAR segments demonstrations into se-
+                quential skills using off-the-shelf foundation models, and augments each skill via simulation-based
+                residual reinforcement learning. The synthesized skill data is co-trained with real-world data, and a
+                Skill Routing Transformer composes the learned skills into a robust autonomous policy capable of
+                completing complex real-world tasks.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Gray Background Section -->
+<section class="gray-section">
+    <div class="container">
+        <!-- Abstract Section -->
+        <div class="content-section">
+            <h2 class="section-title centered-title">Abstract</h2>
+            <div class="abstract-text">
+                <p>
+                    Developing robotic systems capable of robustly executing long-horizon manipulation tasks with human-level dexterity is challenging, as such tasks require both physical dexterity and seamless sequencing of manipulation skills while robustly handling environment variations.
+                    While imitation learning offers a promising approach, acquiring comprehensive datasets is resource-intensive.
+                    In this work, we propose a learning framework and system LODESTAR that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
+                    These sim-augmented datasets enable robust skill training, with a Skill Routing Transformer policy effectively chaining the learned skills together to execute complex long-horizon manipulation tasks.
+                    Experimental evaluations on three challenging real-world long-horizon dexterous manipulation tasks demonstrate that our approach significantly improves task performance and robustness compared to previous baselines.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="video-section">
+            <h2 class="section-title centered-title">Video</h2>
+            <div class="video-container">
+                <video autoplay muted playsinline loop controls preload="metadata" class="main-video">
+                    <source src="assets/media/videos/LodeStar-Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
 </section>
 
-<div class="container">
-    <div class="content-section">
-        <h2 class="section-title">Abstract</h2>
-        <div class="abstract-text">
-            <p>
-                Developing robotic systems capable of robustly executing long-horizon manipulation tasks with human-level dexterity is challenging, as such tasks require both physical dexterity and seamless sequencing of manipulation skills while robustly handling environment variations.
-                While imitation learning offers a promising approach, acquiring comprehensive datasets is resource-intensive.
-                In this work, we propose a learning framework and system LODESTAR that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
-                These sim-augmented datasets enable robust skill training, with a Skill Routing Transformer policy effectively chaining the learned skills together to execute complex long-horizon manipulation tasks.
-                Experimental evaluations on three challenging real-world long-horizon dexterous manipulation tasks demonstrate that our approach significantly improves task performance and robustness compared to previous baselines.
+<hr class="rounded">
+
+<!-- Overview Section -->
+<section class="white-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Overview of LODESTAR</h2>
+            <img src="assets/media/images/pipeline.png" alt="LODESTAR Pipeline" class="method-image">
+            <p class="method-text">
+                LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
+                demonstrations are segmented into manipulation and transition phases using discriminators built
+                from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
+                Skill Routing Transformer policy composes and selects skills or transition actions during execution,
+                enabling coherent long-horizon manipulation in real-world settings.
             </p>
         </div>
     </div>
-</div>
-
-<hr class="rounded">
-
-<div class="rows">
-    <h2 class="overview-title">Overview of LODESTAR</h2>
-    <img src="assets/media/images/pipeline.png" alt="LODESTAR Pipeline" class="method-image">
-    <p class="method-text">
-        LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
-        demonstrations are segmented into manipulation and transition phases using discriminators built
-        from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
-        Skill Routing Transformer policy composes and selects skills or transition actions during execution,
-        enabling coherent long-horizon manipulation in real-world settings.
-    </p>
-</div>
+</section>
 
 <hr class="rounded">
 

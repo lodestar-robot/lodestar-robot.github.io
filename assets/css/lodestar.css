@@ -40,12 +40,54 @@ body {
     margin-top: 15px;
 }
 
-.video-section {
+/* Pull Figure Section */
+.pull-figure-section {
     margin: 40px 0;
 }
 
+.pull-figure-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pull-figure-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pull-figure-caption {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.4;
+    color: #2c2c2c;
+    font-family: 'Google Sans', sans-serif;
+}
+
+/* Gray Background Section */
+.gray-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    margin: 0;
+}
+
+/* White Background Section */
+.white-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.video-section {
+    margin: 40px auto;
+    width: 70%;
+    max-width: 1000px;
+}
+
 .video-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -56,19 +98,20 @@ body {
 }
 
 .content-section {
-    margin: 60px 0;
+    margin: 40px auto;
     width: 70%;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section-title {
     font-size: 2rem;
-    text-align: center;
     margin-bottom: 30px;
     color: #333;
     line-height: 1.2;
+}
+
+.centered-title {
+    text-align: center;
 }
 
 .abstract-text {
@@ -85,12 +128,8 @@ hr.rounded {
     background: #cbcbcb;
     border-radius: 15px;
     height: 2px;
-    width: 70%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 100%;
+    margin: 0;
     border: none;
 }
 
