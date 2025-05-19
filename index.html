@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/lodestar.css">
+    <title>LodeStar | Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations</title>
+    
+    <!-- Thumbnail for social media sharing -->
+    <meta property="og:image" content="assets/media/images/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/media/images/logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    </head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <div class="title-section">
+                <h1 class="main-title">
+                    <img src="assets/media/images/logo.png" alt="LodeStar Icon" class="title-logo">
+            LodeStar: Long-horizon Dexterity via Synthetic Data Augmentation from Human Demonstrations
+        </h1>
+        <div class="author-container">
+            <div class="author-name">Anonymous Authors</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Video Section -->
+<section class="gray-section">
+    <div class="container">
+        <div class="video-section">
+            <h2 class="section-title centered-title">Autonomous Policies</h2>
+            <div class="task-section" id="autonomous-policies">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Plant Watering</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_8.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Light Bulb Assembly</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Liquid Handling</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Plant Watering</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_9.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Light Bulb Assembly</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Liquid Handling</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Plant Watering</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_10.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Light Bulb Assembly</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Liquid Handling</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'autonomous-policies')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'autonomous-policies')">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(6, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(7, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(8, 'autonomous-policies')"></span>
+                    <span class="dot" onclick="currentSlide(9, 'autonomous-policies')"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pull Figure Section -->
+<section class="pull-figure-section">
+    <div class="container">
+        <div class="pull-figure-container">
+            <img src="assets/media/images/pull-figure.png" alt="LODESTAR Framework" class="pull-figure-image">
+            <p class="pull-figure-caption">
+                We present LODESTAR, a framework for learning robust long-horizon dexterous
+                manipulation from a few human demonstrations. LODESTAR segments demonstrations into se-
+                quential skills using off-the-shelf foundation models, and augments each skill via simulation-based
+                residual reinforcement learning. The synthesized skill data is co-trained with real-world data, and a
+                Skill Routing Transformer composes the learned skills into a robust autonomous policy capable of
+                completing complex real-world tasks.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Gray Background Section -->
+<section class="gray-section">
+    <div class="container">
+        <!-- Abstract Section -->
+        <div class="content-section">
+            <h2 class="section-title centered-title">Abstract</h2>
+            <div class="abstract-text">
+                <p>
+                    Developing robotic systems capable of robustly executing long-horizon manipulation tasks with human-level dexterity is challenging, as such tasks require both physical dexterity and seamless sequencing of manipulation skills while robustly handling environment variations.
+                    While imitation learning offers a promising approach, acquiring comprehensive datasets is resource-intensive.
+                    In this work, we propose a learning framework and system LODESTAR that automatically decomposes task demonstrations into semantically meaningful skills using off-the-shelf foundation models, and generates diverse synthetic demonstration datasets from a few human demos through reinforcement learning. 
+                    These sim-augmented datasets enable robust skill training, with a Skill Routing Transformer policy effectively chaining the learned skills together to execute complex long-horizon manipulation tasks.
+                    Experimental evaluations on three challenging real-world long-horizon dexterous manipulation tasks demonstrate that our approach significantly improves task performance and robustness compared to previous baselines.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="video-section">
+            <h2 class="section-title centered-title">Video</h2>
+            <div class="video-container">
+                <video autoplay muted playsinline loop controls preload="metadata" class="main-video">
+                    <source src="assets/media/videos/LodeStar-Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Overview Section -->
+<section class="white-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Overview of LODESTAR</h2>
+            <img src="assets/media/images/pipeline.png" alt="LODESTAR Pipeline" class="method-image">
+            <p class="method-text">
+                LODESTAR Pipeline. LODESTAR consists of three sequential stages. (1) Human
+                demonstrations are segmented into manipulation and transition phases using discriminators built
+                from VLM. (2) Each skill is augmented via residual RL in simulation to train robust policies. (3)
+                Skill Routing Transformer policy composes and selects skills or transition actions during execution,
+                enabling coherent long-horizon manipulation in real-world settings.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Real-world Task Visualization Section -->
+<section class="gray-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Real-world Task Visualization</h2>
+            <img src="assets/media/images/task_vis.png" alt="Real-world Task Visualization" class="method-image">
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Real-to-sim Transfer Section -->
+<section class="white-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Real-to-sim Transfer</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="assets/media/images/spray_render.png" alt="Plant Watering" class="grid-image">
+                    <h3 class="image-caption">Plant Watering</h3>
+                </div>
+                <div class="image-item">
+                    <img src="assets/media/images/bulb_render.png" alt="Light Bulb Assembly" class="grid-image">
+                    <h3 class="image-caption">Light Bulb Assembly</h3>
+                </div>
+                <div class="image-item">
+                    <img src="assets/media/images/pipette_render.png" alt="Liquid Handling" class="grid-image">
+                    <h3 class="image-caption">Liquid Handling</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Experimental Results Section -->
+<section class="gray-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Experimental Results</h2>
+            <img src="assets/media/images/main_results.png" alt="Experimental Results" class="method-image">
+            <p class="method-text">
+                Success rates across three challenging real-world tasks and their average.
+                LODESTAR-PC demonstrates superior performance on average and across tasks, boosting average
+                success by at least 25% compared to the baselines.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Robust Policy Rollouts Section -->
+<section class="white-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Robust Policy Rollouts</h2>
+            
+            <!-- Plant Watering Task -->
+            <div class="task-section" id="plant-watering">
+                <h3 class="task-title">Plant Watering</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 3</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_4.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 4</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/plant_watering_5.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 5</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'plant-watering')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'plant-watering')">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'plant-watering')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'plant-watering')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'plant-watering')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'plant-watering')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'plant-watering')"></span>
+                </div>
+            </div>
+
+            <!-- Light Bulb Assembly Task -->
+            <div class="task-section" id="light-bulb">
+                <h3 class="task-title">Light Bulb Assembly</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 3</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_4.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 4</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/light_bulb_assembly_5.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 5</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'light-bulb')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'light-bulb')">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'light-bulb')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'light-bulb')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'light-bulb')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'light-bulb')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'light-bulb')"></span>
+        </div>
+</div>
+
+            <!-- Liquid Handling Task -->
+            <div class="task-section" id="liquid-handling">
+                <h3 class="task-title">Liquid Handling</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_1.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 3</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_4.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 4</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <video autoplay muted playsinline loop preload="metadata" width="100%">
+                            <source src="assets/media/videos/liquid_handling_5.mp4" type="video/mp4">
+                        </video>
+                        <div class="text">Rollout 5</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 'liquid-handling')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'liquid-handling')">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'liquid-handling')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'liquid-handling')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'liquid-handling')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'liquid-handling')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'liquid-handling')"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add JavaScript for slideshow functionality -->
+<script>
+let slideIndex = {
+    'plant-watering': 1,
+    'light-bulb': 1,
+    'liquid-handling': 1,
+    'autonomous-policies': 1
+};
+
+function plusSlides(n, taskId) {
+    showSlides(slideIndex[taskId] += n, taskId);
+}
+
+function currentSlide(n, taskId) {
+    showSlides(slideIndex[taskId] = n, taskId);
+}
+
+function showSlides(n, taskId) {
+    let i;
+    let slides = document.querySelectorAll(`#${taskId} .mySlides`);
+    let dots = document.querySelectorAll(`#${taskId} .dot`);
+    
+    if (n > slides.length) {slideIndex[taskId] = 1}
+    if (n < 1) {slideIndex[taskId] = slides.length}
+    
+    // Hide all slides and pause all videos
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        let video = slides[i].querySelector('video');
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
+    
+    // Update dots
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    // Show current slide
+    slides[slideIndex[taskId]-1].style.display = "block";
+    dots[slideIndex[taskId]-1].className += " active";
+
+    // Play current video
+    let currentVideo = slides[slideIndex[taskId]-1].querySelector('video');
+    if (currentVideo) {
+        currentVideo.currentTime = 0;
+        let playPromise = currentVideo.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log("Playback failed:", error);
+            });
+        }
+    }
+}
+
+// Initialize all slideshows and set up video end event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all slideshows
+    showSlides(1, 'plant-watering');
+    showSlides(1, 'light-bulb');
+    showSlides(1, 'liquid-handling');
+    showSlides(1, 'autonomous-policies');
+
+    // Set up video end event listeners for each task
+    ['plant-watering', 'light-bulb', 'liquid-handling', 'autonomous-policies'].forEach(taskId => {
+        let slides = document.querySelectorAll(`#${taskId} .mySlides`);
+        slides.forEach((slide, index) => {
+            let video = slide.querySelector('video');
+            if (video) {
+                // Remove any existing event listeners
+                video.removeEventListener('ended', video.endedHandler);
+                
+                // Create new event listener
+                video.endedHandler = function() {
+                    console.log('Video ended, moving to next slide');
+                    plusSlides(1, taskId);
+                };
+                
+                // Add the event listener
+                video.addEventListener('ended', video.endedHandler);
+                
+                // Ensure video doesn't loop
+                video.loop = false;
+            }
+        });
+    });
+});
+</script>
+
+<hr class="rounded">
+
+<!-- OOD Results Section -->
+<section class="gray-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">OOD Results</h2>
+            <img src="assets/media/images/OOD.png" alt="OOD Results" class="method-image">
+            <p class="method-text">
+                Visualization of OOD experiments with a larger initial distribution condition. The red and blue rectangles represent the distribution of demonstration data for the initial pose of the light bulb and the black base. The multiple light bulbs and black bases illustrate different initial positions across evaluation episodes. Faded ones indicate failures, while solid ones indicate successes. Lodestar demonstrates stronger generalizability than the real-only baseline with fewer demonstrations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<!-- Failure Analysis Section -->
+<section class="white-section">
+    <div class="container">
+        <div class="rows">
+            <h2 class="section-title centered-title">Failure Analysis</h2>
+            <img src="assets/media/images/failure_analysis.png" alt="Failure Analysis" class="method-image">
+            <p class="method-text">
+                Failure Cases Distribution on Three Tasks.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr class="rounded">
+
+<footer>
+    <div class="footer-content">
+    <p>&copy; 2025 Anonymous Authors. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
