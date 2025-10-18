@@ -421,4 +421,37 @@ footer {
     .text {
         font-size: 12px;
     }
+}
+
+/* Button styles - matching ReKep design */
+.button-container {
+    color: #53565A;
+    justify-items: center;
+    padding-top: 0.5em;
+    justify-content: center;
+    display: flex;
+}
+
+.button {
+    color: #53565A;
+    font-family: 'Google Sans', sans-serif;
+    border-radius: 0.5em;
+    width: 6em;
+    height: 2.2em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    vertical-align: middle;
+    border: solid 0px transparent;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    filter: brightness(97%);
 } 
