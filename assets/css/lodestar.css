@@ -427,8 +427,8 @@ footer {
 .button-container {
     color: #53565A;
     justify-items: center;
-    padding-top: 1.5em;
-    padding-bottom: 0.3em;
+    padding-top: 2.5em;
+    padding-bottom: 0.1em;
     justify-content: center;
     display: flex;
 }
